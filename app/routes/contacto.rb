@@ -16,7 +16,7 @@ class EnglishGate < Sinatra::Application
 
     if response.empty?
       response[:ok] = 'ok'
-      #self.compose_email
+      self.compose_email
     end
 
     json response
