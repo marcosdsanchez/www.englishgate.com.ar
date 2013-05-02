@@ -1,6 +1,7 @@
 //= require jquery/jquery
 //= require jquery-ujs/src/rails
 //= require bootstrap/js/bootstrap-modal
+//= require ganalytics
 jQuery(function($) {
     $("#contacto")
     .bind("ajax:success", function(evt, data, status, xhr) {
