@@ -1,6 +1,6 @@
 # encoding: utf-8
 require_relative 'sprockets'
-require_relative 'validator/EmailValidator'
+require_relative 'validator/emailValidator'
 
 class EnglishGate < Sinatra::Application
 
