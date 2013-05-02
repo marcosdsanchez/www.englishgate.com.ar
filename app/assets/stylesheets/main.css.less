@@ -1,0 +1,113 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    max-width: 700px;
+    > hr {
+        margin: 30px 0;
+    }
+}
+
+section {
+    padding-left: 20px;
+    form {
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+}
+
+input[type="email"],
+input[type="text"]
+{
+    width: 200px;
+}
+
+textarea {
+    width:  300px;
+    height: 150px;
+}
+
+header {
+    nav {
+        ul {
+            li {
+                padding: 2px;
+            }
+        }
+    }
+}
+
+.logo {
+    .tick {
+        color: @green;
+        font-size: 45px;
+    }
+    font-size: 24.5px;
+    font-weight: bold;
+}
+
+
+.titulo {
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.subtitulo {
+    margin-top: -5px;
+    font-size: 15px;
+}
+
+div.row.features {
+    padding-top:15px;
+    ul li {
+        padding: 10px;
+        font-size: 17px;
+    }
+}
+
+footer {
+    margin-top: -20px;
+}
+
+.pic {
+    height: 130px;
+    width: 130px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+// Base modal
+.modal {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: @zindexModal;
+    width: 600px;
+    margin-left: -280px;
+    background-color: @white;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.3);
+            *border: 1px solid #999; /* IE6-7 */
+            .border-radius(6px);
+            .box-shadow(0 3px 7px rgba(0,0,0,0.3));
+            .background-clip(padding-box);
+            // Remove focus outline from opened modal
+            outline: none;
+
+    &.fade {
+        .transition(e('opacity .3s linear, top .3s ease-out'));
+        top: -25%;
+    }
+    &.fade.in { top: 10%; }
+}
+
+
+.modal-body {
+    position: relative;
+    overflow-y: auto;
+    max-height: 600px;
+    padding: 15px;
+}

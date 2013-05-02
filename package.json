@@ -1,0 +1,10 @@
+{
+    "name" : "www.englishgate.com.ar",
+    "version" : "0.0.1",
+    "dependencies": {
+        "bower": "0.9.x"
+    },
+    "scripts": {
+        "postinstall": "./node_modules/bower/bin/bower install"
+    }
+}

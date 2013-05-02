@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+   Marcos D. Sánchez -- Web Developer -- @marcosdsanchez
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, Twitter Bootrap,  jQuery
+    Sinatra, Sprockets, Bower

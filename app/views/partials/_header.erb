@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Clases de Inglés en Bariloche</title>
+        <link rel="stylesheet" href="<%= stylesheet_path "application" %>">
+    </head>
+    <body>
+        <header class="masthead">
+        <nav>
+        <ul class="nav nav-pills pull-right">
+            <li <%= 'class="active"' if same_path?(@path, "/acerca-de") || @path == '/' %>><a href="/acerca-de">Acerca de English Gate</a></li>
+            <li <%= 'class="active"' if same_path?(@path, "/ubicacion") %>><a href="/ubicacion">Ubicación</a></li>
+            <li <%= 'class="active"' if same_path?(@path, "/contacto") %>><a href="/contacto">Contacto</a></li>
+        </ul>
+        </nav>
+        <span class="logo"><span class="tick">✓</span>English Gate</span>
+        </header>
+        <hr>
