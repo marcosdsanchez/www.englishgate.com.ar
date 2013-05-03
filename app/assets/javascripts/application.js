@@ -9,6 +9,7 @@ jQuery(function($) {
         if (json.ok){
             $("#response").addClass('alert alert-success');
             $("#response").html('<i class="icon-ok"></i> Su mensaje ha sido enviado correctamente.');
+            $("#contacto")[0].reset();
         } else {
             $("#response").addClass('alert alert-error');
             text = '';
