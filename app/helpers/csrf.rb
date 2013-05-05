@@ -1,4 +1,4 @@
-# encoding: utf-8
+
 class EnglishGate < Sinatra::Application
   helpers do
     def csrf_token

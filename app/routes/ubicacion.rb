@@ -1,4 +1,3 @@
-# encoding: utf-8
 class EnglishGate < Sinatra::Application
   get "/ubicacion" do
     @path = request.path_info
