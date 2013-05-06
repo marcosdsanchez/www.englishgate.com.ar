@@ -1,6 +1,5 @@
 require 'sprockets'
 require 'sinatra/sprockets-helpers'
-require "less"
 
 class EnglishGate < Sinatra::Application
   set :sprockets, Sprockets::Environment.new(root)

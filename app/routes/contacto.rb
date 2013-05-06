@@ -1,3 +1,5 @@
+require 'sinatra/json'
+
 class EnglishGate < Sinatra::Application
   helpers Sinatra::JSON
 
