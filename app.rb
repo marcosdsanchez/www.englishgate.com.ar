@@ -1,18 +1,8 @@
 require 'sinatra'
-require 'sinatra/json'
 
 class EnglishGate < Sinatra::Application
-  set :root,           File.dirname(__FILE__)
-
-  configure :development do
-    require 'sinatra/reloader'
-    register Sinatra::Reloader
-  end
-  configure do
-    enable :sessions
-  end
+  set :root, File.dirname(__FILE__)
 end
-
 
 require_relative 'app/config/views'
 require_relative 'app/config/sprockets'
