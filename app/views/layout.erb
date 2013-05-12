@@ -1,3 +1,3 @@
-<%= partial :"partials/header" %>
+<%= erb :'partials/_header', :layout => false %>
 <%= yield %>
-<%= partial :"partials/footer" %>
+<%= erb :'partials/_footer', :layout => false %>
