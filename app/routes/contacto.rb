@@ -21,13 +21,7 @@ module EnglishGate
     private
 
     def compose_email
-      message = "
-      Nombre: #{params[:name]}
-      Teléfono: (#{params[:phone]})
-      Email: (#{params[:email]})
-
-      #{params[:message]}
-      "
+      message = erb 'emails/contact_message'
       ContactEmailNotifier.new(params[:email], message)
     end
   end
