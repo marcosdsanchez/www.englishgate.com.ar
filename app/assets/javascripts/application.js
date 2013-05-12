@@ -24,6 +24,7 @@ jQuery(function($) {
     })
     .bind("ajax:error", function() {
         $("#response").removeClass();
+        $("#response").addClass('alert alert-error');
         $("#response").html('<i class="icon-warning-sign"></i> Hubo un error. Por favor intente nuevamente más tarde.');
     });
 });
