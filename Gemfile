@@ -1,9 +1,12 @@
 source 'https://rubygems.org'
-ruby  "2.0.0"
+ruby  '2.0.0'
 
 gem 'sinatra', '~>1.4.2'
 gem 'sinatra-partial', '~>0.4.0'
 gem 'sinatra-contrib', '~>1.4.0'
+
+gem 'activemodel', '~> 4.0.0.rc1'
+gem 'active-model-email-validator', '~> 1.0.2'
 
 gem 'sprockets-helpers', '~>1.0.1'
 gem 'therubyracer', '~>0.11.4', :platforms => :ruby
