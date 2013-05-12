@@ -1,9 +1,10 @@
-require 'sinatra'
+require 'sinatra/base'
 
-class EnglishGate < Sinatra::Application
-  set :root, File.dirname(__FILE__)
+module EnglishGate
+  class Application < Sinatra::Base
+    set :root, File.dirname(__FILE__)
+  end
 end
-
 require_relative 'app/config/views'
 require_relative 'app/config/sprockets'
 

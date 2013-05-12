@@ -1,5 +1,7 @@
-class EnglishGate < Sinatra::Application
-  get "/cursos" do
-    erb :cursos
+module EnglishGate
+  class Application < Sinatra::Base
+    get '/cursos' do
+      erb :cursos
+    end
   end
 end

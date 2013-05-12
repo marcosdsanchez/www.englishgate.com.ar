@@ -1,5 +1,7 @@
-class EnglishGate < Sinatra::Application
-  helpers do
-    include Sprockets::Helpers
+module EnglishGate
+  class Application < Sinatra::Base
+    helpers do
+      include Sprockets::Helpers
+    end
   end
 end

@@ -1,9 +1,9 @@
 require './app'
 
 map '/' do
-  run EnglishGate
+  run EnglishGate::Application
 end
 
-map EnglishGate.assets_prefix do
-  run EnglishGate.sprockets
+map EnglishGate::Application.assets_prefix do
+  run EnglishGate::Application.sprockets
 end
