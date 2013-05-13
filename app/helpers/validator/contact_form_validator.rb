@@ -31,12 +31,19 @@ class ContactFormValidator
   end
 
   def response
-    if valid?
-      response = {}
-      response[:ok] = 'ok'
-      response
-    else
-      errors.messages
-    end
+    valid? ? valid_response : invalid_response
   end
+
+  private
+
+  def valid_response
+    response = {}
+    response[:ok] = 'ok'
+    response
+  end
+
+  def invalid_response
+    errors.messages
+  end
+
 end
