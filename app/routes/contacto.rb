@@ -21,7 +21,7 @@ module EnglishGate
     private
 
     def compose_email
-      message = erb 'emails/contact_message'
+      message = erb :'emails/contact_message', :layout => false
       ContactEmailNotifier.new(params[:email], message)
     end
   end
