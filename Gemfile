@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 ruby  '2.0.0'
 
+gem 'rake', '~>10.0.4'
+
 gem 'sinatra', '~>1.4.2'
 gem 'sinatra-contrib', '~>1.4.0'
 
