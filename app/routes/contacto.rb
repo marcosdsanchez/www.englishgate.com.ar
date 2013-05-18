@@ -5,6 +5,7 @@ module EnglishGate
     helpers Sinatra::JSON
 
     get '/contacto' do
+      @require_js = 'sections/contacto/application'
       @path = request.path_info
       erb :contacto
     end

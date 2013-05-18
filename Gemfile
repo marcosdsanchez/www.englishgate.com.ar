@@ -12,7 +12,8 @@ gem 'active-model-email-validator', '~> 1.0.2'
 gem 'sprockets-helpers', '~>1.0.1'
 gem 'therubyracer', '~>0.11.4', :platforms => :ruby
 gem 'less', '~>2.3.2'
-
+gem 'uglifier'
+gem 'yui-compressor'
 gem 'pony', '~>1.4'
 
 gem 'thin', '~>1.5.1'
