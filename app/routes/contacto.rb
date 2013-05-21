@@ -1,8 +1,7 @@
-require 'sinatra/json'
+require 'json'
 
 module EnglishGate
   class Application < Sinatra::Base
-    helpers Sinatra::JSON
 
     get '/contacto' do
       @require_js = 'sections/contacto/application'
@@ -11,12 +10,13 @@ module EnglishGate
     end
 
     post '/contacto' do
+      content_type :json
       contact_form = ContactFormValidator.new(params)
       if contact_form.valid?
         contact_email = compose_email
         contact_email.send
       end
-      json contact_form.response
+      contact_form.response.to_json
     end
 
     private
