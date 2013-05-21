@@ -7,7 +7,7 @@ namespace :assets do
   task :configure do
     Rake::SprocketsTask.new do |t|
       t.environment = EnglishGate::Application.sprockets
-      t.output      = EnglishGate::Application.assets_path
+      t.output      = File.dirname(Sprockets::Helpers.manifest.path)
       t.assets      = EnglishGate::Application.assets_to_compile
     end
   end

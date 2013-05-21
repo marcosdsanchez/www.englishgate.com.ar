@@ -4,6 +4,6 @@ map '/' do
   run EnglishGate::Application
 end
 
-map EnglishGate::Application.assets_prefix do
+map Sprockets::Helpers.prefix do
   run EnglishGate::Application.sprockets
 end
