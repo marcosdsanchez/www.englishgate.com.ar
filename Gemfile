@@ -5,7 +5,7 @@ gem 'rake', '~>10.0.4'
 
 gem 'sinatra', '~>1.4.2'
 
-gem 'activemodel', '~> 4.0.0.rc1'
+gem 'activemodel', '~> 4.0.0'
 gem 'active-model-email-validator', '~> 1.0.2'
 
 gem 'sprockets-helpers', '~>1.0.1'
