@@ -9,7 +9,7 @@ module EnglishGate
       paths = [
           File.join(root, 'app', 'assets', 'stylesheets'),
           File.join(root, 'app', 'assets', 'javascripts'),
-          File.join(root, 'components')
+          File.join(root, 'bower_components')
       ]
       paths.each do |path|
         sprockets.append_path path
