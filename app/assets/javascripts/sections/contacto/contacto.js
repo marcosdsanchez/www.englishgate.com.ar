@@ -1,4 +1,4 @@
-jQuery(function($) {
+jQuery(document).ready(function($) {
     var response = $("#response");
     $("#contacto")
         .bind("ajax:success", function(evt, data, status, xhr) {
