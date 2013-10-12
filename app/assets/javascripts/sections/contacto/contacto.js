@@ -1,16 +1,18 @@
 jQuery(document).ready(function($) {
+    $(document).ajaxStart(function(event) {
+        $("#send-comment")
+            .attr('disabled', 'disabled')
+            .html('<i class="icon-refresh icon-spin"></i> Enviando Consulta ...');
+    });
+    $(document).ajaxStop(function(event) {
+        $("#send-comment")
+            .removeAttr('disabled')
+            .html('<i class="icon-comment"></i> Enviar Consulta');
+    });
     $("#send-comment")
         .on("click", function(event) {
             event.preventDefault();
             $("#contacto").submit();
-        })
-        .on("ajaxStart", function(event) {
-            $(this).attr('disabled', 'disabled');
-            $(this).html('<i class="icon-refresh icon-spin"></i> Enviando Consulta ...');
-        })
-        .on("ajaxStop", function(event) {
-            $(this).removeAttr('disabled');
-            $(this).html('<i class="icon-comment"></i> Enviar Consulta');
         });
     $("#contacto")
         .on("submit", function(event) {
