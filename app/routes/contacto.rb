@@ -1,5 +1,3 @@
-require 'json'
-
 module EnglishGate
   class Application < Sinatra::Base
 
