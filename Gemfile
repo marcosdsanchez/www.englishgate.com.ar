@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby  '2.0.0'
 
 gem 'rake', '~>10.0.4'
 
@@ -19,8 +18,5 @@ gem 'thin', '~>1.5.1'
 
 group(:development, :testing) do
   gem 'rerun', '~>0.8.1'
-end
-
-group(:production) do
-  gem 'newrelic_rpm'
+  gem 'dotenv'
 end
