@@ -1,5 +1,5 @@
 require 'active_model'
-require 'active-model-email-validator'
+require 'email_validator'
 
 class ContactFormValidator
   include ActiveModel::Validations
@@ -8,18 +8,18 @@ class ContactFormValidator
 
   validates(
       :email,
-        :presence => {:message => 'Email requerido.'},
-        :email    => {:message => 'Email no válido.'}
+        :presence => {message: 'Email requerido.'},
+        :email    => {message: 'Email no válido.'}
   )
 
   validates(
       :mki,
-      :absence => {:message => 'Error. Mensaje no enviado.'}
+      :absence => {message: 'Error. Mensaje no enviado.'}
   )
 
   validates(
       :message,
-        :presence => {:message => 'Mensaje requerido.'}
+        :presence => {message: 'Mensaje requerido.'}
   )
 
   def initialize(attributes = {})

@@ -13,8 +13,8 @@ module EnglishGate
         :charset => 'utf-8',
         :via => :smtp,
           :via_options => {
-          :address              => 'smtp.gmail.com',
-          :port                 => '587',
+          :address              => ENV['SMTP_ADDRESS'],
+          :port                 => ENV['SMTP_PORT'],
           :enable_starttls_auto => true,
           :user_name            => ENV['SMTP_USERNAME'],
           :password             => ENV['SMTP_PASSWORD'],
