@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 gem 'rake', '~>10.0.4'
 
 gem 'sinatra', '~>1.4.2'
-
-gem 'activemodel', '~> 4.0.0'
+gem 'activesupport', '~> 4.1.11'
+gem 'activemodel', '~> 4.1.11'
 gem 'email_validator', '~> 1.5'
 
 gem 'sprockets-helpers', '~>1.1.0'
