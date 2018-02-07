@@ -23,9 +23,7 @@ module EnglishGate
         config.public_path = public_folder
         if production?
           require 'uglifier'
-          require 'yui/compressor'
           sprockets.js_compressor = Uglifier.new(:output => {:comments => :none}, mangle: true)
-          sprockets.css_compressor = YUI::CssCompressor.new
         else
           config.debug = true
         end

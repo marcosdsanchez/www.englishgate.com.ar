@@ -12,7 +12,6 @@ gem 'sprockets-helpers', '~>1.1.0'
 gem 'therubyracer', '~>0.12.2', platforms: :ruby
 gem 'less', '~>2.3.2', require: 'less'
 gem 'uglifier'
-gem 'yui-compressor'
 gem 'pony', '~>1.4'
 
 gem 'thin', '~>1.6.3'

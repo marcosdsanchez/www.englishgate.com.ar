@@ -19,7 +19,7 @@ GEM
       activemodel
     eventmachine (1.2.5)
     execjs (2.7.0)
-    ffi (1.9.18)
+    ffi (1.9.21)
     hike (1.2.3)
     i18n (0.9.3)
       concurrent-ruby (~> 1.0)
@@ -34,7 +34,7 @@ GEM
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     mini_mime (1.0.0)
-    minitest (5.11.2)
+    minitest (5.11.3)
     multi_json (1.13.1)
     pony (1.12)
       mail (>= 2.0)
@@ -70,11 +70,10 @@ GEM
       rack (~> 1.0)
     thread_safe (0.3.6)
     tilt (1.4.1)
-    tzinfo (1.2.4)
+    tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.4)
+    uglifier (4.1.5)
       execjs (>= 0.3.0, < 3)
-    yui-compressor (0.12.0)
 
 PLATFORMS
   ruby
@@ -93,7 +92,9 @@ DEPENDENCIES
   therubyracer (~> 0.12.2)
   thin (~> 1.6.3)
   uglifier
-  yui-compressor
+
+RUBY VERSION
+   ruby 2.5.0p0
 
 BUNDLED WITH
    1.16.1
